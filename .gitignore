@@ -14,8 +14,9 @@ backend/debug/*
 # Frontend
 frontend/node_modules/
 frontend/dist/
+frontend/.env
 
-# Editor/OS
+# Editor / OS
 .vscode/
 .DS_Store
 Thumbs.db
@@ -23,3 +24,7 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+# Docker image exports
+*.tar
+*.tar.gz
