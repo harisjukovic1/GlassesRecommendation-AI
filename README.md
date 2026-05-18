@@ -11,24 +11,26 @@ Requirements
 
 Before running the project, make sure the computer has:
 
-``Python 3.11.x
+```Python 3.11.x
 Node.js + npm
-Git``
+Git
+```
 
 ``Python 3.11 is required because the backend uses TensorFlow/Keras, and these dependencies can fail or behave differently on newer Python versions.``
 
 To check installed Python versions on Windows:
 
-py -0
+`py -0`
 
 To check Node.js and npm:
 
-node -v
-npm -v
-
-``1. Clone the Repository
+`node -v`
+`npm -v`
+```
+1. Clone the Repository
 git clone -b mvp https://github.com/harisjukovic1/GlassesRecommendation-AI.git
-cd GlassesRecommendation-AI``
+cd GlassesRecommendation-AI
+```
 
 The project should contain:
 
@@ -36,6 +38,7 @@ backend/
 frontend/
 .gitignore
 README.md
+
 2. Create Environment Files
 
 The real .env files are not pushed to GitHub because they contain local configuration values. Instead, the repository includes .env.example files. The user copies these examples and creates their own local .env files.
@@ -44,8 +47,10 @@ This approach is used because every machine may have different local settings, b
 
 Run these commands from the project root:
 
-``copy frontend\.env.example frontend\.env
-copy backend\.env.example backend\.env``
+```
+copy frontend\.env.example frontend\.env
+copy backend\.env.example backend\.env
+```
 
 The frontend .env should contain values like:
 
@@ -63,11 +68,13 @@ After creating or changing .env files, restart the frontend/backend servers.
 
 Open the first terminal:
 
-``cd backend
+```
+cd backend
 py -3.11 -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-python app.py``
+python app.py
+```
 
 The command:
 
@@ -86,9 +93,11 @@ http://127.0.0.1:5000/health
 
 Open a second terminal:
 
-``cd frontend
+```
+cd frontend
 npm install
-npm run dev``
+npm run dev
+```
 
 The frontend should start on something like:
 
